@@ -1,0 +1,22 @@
+body {
+    font-family: 'Inter', sans-serif !important;
+}
+
+.bg-bluegreen {
+    background-color: #095746 !important;
+}
+
+.text-justify {
+    text-align: justify;
+}
+
+
+.navbar-nav > li{
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+.main-pg-intro > p {
+    font-size: 1.15em;
+    text-align: center;
+}
