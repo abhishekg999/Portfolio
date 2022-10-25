@@ -1,5 +1,5 @@
 body {
-    font-family: 'Inter', sans-serif !important;
+    font-family: 'Ubuntu', sans-serif !important;
 }
 
 .bg-bluegreen {
@@ -19,4 +19,44 @@ body {
 .main-pg-intro > p {
     font-size: 1.15em;
     text-align: center;
+}
+
+#loading-screen {
+    display: block;
+}
+
+.modal-body {
+        background-color: #26382b;
+}
+
+svg {
+    display: block;
+    margin: auto;
+}
+
+.svg-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+#loading-logo {
+    fill: none;
+    stroke: #67d78e;
+    stroke-width: 10;
+    stroke-dasharray: 3450;
+    stroke-dataoffset: 3450;
+    animation: draw 5s normal forwards cubic-bezier(.66,.97,.68,1.02);
+}
+
+
+@keyframes draw {
+  from {
+    stroke-dashoffset: 3450;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
 }

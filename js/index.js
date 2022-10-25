@@ -9,4 +9,17 @@ function cookie_prompt_handler(){
     }, 1000);   
 }
 
-window.onload = cookie_prompt_handler();
+var app = angular.module("portfolio", []);
+window.addEventListener('load', function() {
+    document.getElementById("loading-logo").addEventListener("animationend", function() {
+        setInterval(() => {
+            document.getElementById("loading-screen").style.display = "none"; ;
+        }, 1000);
+        
+    })
+
+})
+
+
+
+
