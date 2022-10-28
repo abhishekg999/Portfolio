@@ -23,6 +23,11 @@ body {
 
 #loading-screen {
     display: block;
+    transition: all 0.5s linear;
+}
+
+#header {
+    transition: all 0.5s linear;
 }
 
 .modal-body {
@@ -48,15 +53,17 @@ svg {
     stroke-width: 10;
     stroke-dasharray: 3450;
     stroke-dataoffset: 3450;
-    animation: draw 5s normal forwards cubic-bezier(.66,.97,.68,1.02);
+    animation: draw 3.5s normal forwards cubic-bezier(.66,.97,.68,1.02);
 }
 
 
 @keyframes draw {
   from {
     stroke-dashoffset: 3450;
+    fill: #67d78e;
   }
   to {
     stroke-dashoffset: 0;
+    fill: #26382b;
   }
 }
