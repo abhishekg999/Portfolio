@@ -1,9 +1,14 @@
+:root {
+    --main-bg-color:  #132b33;
+    --modal-bg-color: #073f3b;
+}
+
 body {
     font-family: 'Ubuntu', sans-serif !important;
 }
 
 .bg-bluegreen {
-    background-color: #095746 !important;
+    background-color: var(--main-bg-color) !important;
 }
 
 .text-justify {
@@ -16,22 +21,36 @@ body {
     padding-right: 1em;
 }
 
-.main-pg-intro > p {
+.main-pg-body > p {
     font-size: 1.15em;
     text-align: center;
 }
 
 #loading-screen {
     display: block;
-    transition: all 0.5s linear;
+    transition: opacity 0.5s linear;
 }
 
-#header {
-    transition: all 0.5s linear;
+#name-header {
+    margin: 0 auto;
+    transition: opacity 0.4s linear;
+
+    color: #dfeef3;
+    font-weight: 900;
+    
+}
+
+#loading-svg {
+   height: 400px;
+   transition: height 0.3s linear; 
+}
+
+.nosize {
+    height: 0px !important;
 }
 
 .modal-body {
-        background-color: #26382b;
+    background-color: var(--modal-bg-color);
 }
 
 svg {
@@ -62,8 +81,16 @@ svg {
     stroke-dashoffset: 3450;
     fill: #67d78e;
   }
+
   to {
     stroke-dashoffset: 0;
-    fill: #26382b;
+    fill: var(--modal-bg-color);
   }
+}
+
+#main-pg-intro-description {
+    color: #b7b5b5;
+    font-size: 0.8em;
+
+
 }
